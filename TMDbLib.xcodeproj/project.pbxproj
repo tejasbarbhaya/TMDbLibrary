@@ -7,6 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		684274A923A64C6200AA3CA5 /* FilterUtility.m in Sources */ = {isa = PBXBuildFile; fileRef = 684274A723A64C6200AA3CA5 /* FilterUtility.m */; };
+		684274AA23A64C6200AA3CA5 /* FilterUtility.m in Sources */ = {isa = PBXBuildFile; fileRef = 684274A723A64C6200AA3CA5 /* FilterUtility.m */; };
+		684274AB23A64C6200AA3CA5 /* FilterUtility.h in Headers */ = {isa = PBXBuildFile; fileRef = 684274A823A64C6200AA3CA5 /* FilterUtility.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		684274B423A64CC300AA3CA5 /* RootClass.h in Headers */ = {isa = PBXBuildFile; fileRef = 684274B023A64CC300AA3CA5 /* RootClass.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		684274B523A64CC300AA3CA5 /* Result.h in Headers */ = {isa = PBXBuildFile; fileRef = 684274B123A64CC300AA3CA5 /* Result.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		684274B623A64CC300AA3CA5 /* RootClass.m in Sources */ = {isa = PBXBuildFile; fileRef = 684274B223A64CC300AA3CA5 /* RootClass.m */; };
+		684274B723A64CC300AA3CA5 /* RootClass.m in Sources */ = {isa = PBXBuildFile; fileRef = 684274B223A64CC300AA3CA5 /* RootClass.m */; };
+		684274B823A64CC300AA3CA5 /* Result.m in Sources */ = {isa = PBXBuildFile; fileRef = 684274B323A64CC300AA3CA5 /* Result.m */; };
+		684274B923A64CC300AA3CA5 /* Result.m in Sources */ = {isa = PBXBuildFile; fileRef = 684274B323A64CC300AA3CA5 /* Result.m */; };
 		9679191723901FE100731BBC /* TMDbLib.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9679190D23901FE100731BBC /* TMDbLib.framework */; };
 		9679191C23901FE100731BBC /* TMDbLibTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9679191B23901FE100731BBC /* TMDbLibTests.m */; };
 		9679191E23901FE100731BBC /* TMDbLib.h in Headers */ = {isa = PBXBuildFile; fileRef = 9679191023901FE100731BBC /* TMDbLib.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -29,6 +38,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		684274A723A64C6200AA3CA5 /* FilterUtility.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FilterUtility.m; sourceTree = "<group>"; };
+		684274A823A64C6200AA3CA5 /* FilterUtility.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FilterUtility.h; sourceTree = "<group>"; };
+		684274B023A64CC300AA3CA5 /* RootClass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RootClass.h; sourceTree = "<group>"; };
+		684274B123A64CC300AA3CA5 /* Result.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Result.h; sourceTree = "<group>"; };
+		684274B223A64CC300AA3CA5 /* RootClass.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RootClass.m; sourceTree = "<group>"; };
+		684274B323A64CC300AA3CA5 /* Result.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Result.m; sourceTree = "<group>"; };
 		9679190D23901FE100731BBC /* TMDbLib.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = TMDbLib.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9679191023901FE100731BBC /* TMDbLib.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TMDbLib.h; sourceTree = "<group>"; };
 		9679191123901FE100731BBC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -62,6 +77,17 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		684274AF23A64CC300AA3CA5 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				684274B023A64CC300AA3CA5 /* RootClass.h */,
+				684274B123A64CC300AA3CA5 /* Result.h */,
+				684274B223A64CC300AA3CA5 /* RootClass.m */,
+				684274B323A64CC300AA3CA5 /* Result.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		9679190323901FE000731BBC = {
 			isa = PBXGroup;
 			children = (
@@ -83,12 +109,15 @@
 		9679190F23901FE100731BBC /* TMDbLib */ = {
 			isa = PBXGroup;
 			children = (
+				684274AF23A64CC300AA3CA5 /* Model */,
 				96DFD90823913CD1008FDFC3 /* Addition.h */,
 				96DFD90723913CD1008FDFC3 /* libCSample.a */,
 				9679191023901FE100731BBC /* TMDbLib.h */,
 				9679191123901FE100731BBC /* Info.plist */,
 				96791927239020D500731BBC /* NetworkManager.h */,
 				96791928239020D500731BBC /* NetworkManager.m */,
+				684274A823A64C6200AA3CA5 /* FilterUtility.h */,
+				684274A723A64C6200AA3CA5 /* FilterUtility.m */,
 			);
 			path = TMDbLib;
 			sourceTree = "<group>";
@@ -110,7 +139,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				9679191E23901FE100731BBC /* TMDbLib.h in Headers */,
+				684274B423A64CC300AA3CA5 /* RootClass.h in Headers */,
 				96DFD90B23913CD1008FDFC3 /* Addition.h in Headers */,
+				684274AB23A64C6200AA3CA5 /* FilterUtility.h in Headers */,
+				684274B523A64CC300AA3CA5 /* Result.h in Headers */,
 				96791929239020D500731BBC /* NetworkManager.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -211,7 +243,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				684274A923A64C6200AA3CA5 /* FilterUtility.m in Sources */,
 				9679192A239020D500731BBC /* NetworkManager.m in Sources */,
+				684274B823A64CC300AA3CA5 /* Result.m in Sources */,
+				684274B623A64CC300AA3CA5 /* RootClass.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -219,7 +254,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				684274B723A64CC300AA3CA5 /* RootClass.m in Sources */,
 				9679192B239020D500731BBC /* NetworkManager.m in Sources */,
+				684274B923A64CC300AA3CA5 /* Result.m in Sources */,
+				684274AA23A64C6200AA3CA5 /* FilterUtility.m in Sources */,
 				9679191C23901FE100731BBC /* TMDbLibTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
