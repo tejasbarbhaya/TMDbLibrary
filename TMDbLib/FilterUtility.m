@@ -34,7 +34,7 @@
     }
     
     //Sort Array based on "VoteAverage"
-    NSArray *sortedArray = [result.results sortedArrayUsingComparator:^NSComparisonResult(Result *p1, Result *p2){
+    NSArray *sortedArray = [mutableArray sortedArrayUsingComparator:^NSComparisonResult(Result *p1, Result *p2){
         NSNumber *num1 = [NSNumber numberWithFloat:p1.voteAverage];
         NSNumber *num2 = [NSNumber numberWithFloat:p2.voteAverage];
         return [num1 compare:num2];
