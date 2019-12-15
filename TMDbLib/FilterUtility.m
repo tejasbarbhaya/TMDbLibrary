@@ -64,8 +64,8 @@
     NSCalendar *calendar = [NSCalendar currentCalendar];
     NSDateComponents *components = [calendar components:(NSCalendarUnitYear) fromDate:dateFromString];
     
-    if (components.year >= 1990) {
-        if (components.year <= 2015) {
+    if (components.year >= 2017) {
+        if (components.year <= 2018) {
             isDateFiltered = true;
         }
     }
